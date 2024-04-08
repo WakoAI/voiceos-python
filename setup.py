@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 
 NAME = "voiceos"
-VERSION = "0.8.1"
+VERSION = "0.8.1.2"
 PYTHON_REQUIRES = ">=3.7"
 REQUIRES = [
     "urllib3 >= 1.25.3, < 2.1.0",

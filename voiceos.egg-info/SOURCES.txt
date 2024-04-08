@@ -24,6 +24,7 @@ test/test_calls_api.py
 test/test_calls_pagination.py
 test/test_chat_gpt.py
 test/test_create_call.py
+test/test_create_call_response.py
 test/test_currency.py
 test/test_deepgram_languages.py
 test/test_deepgram_model.py
@@ -31,6 +32,7 @@ test/test_deepgram_transcriber.py
 test/test_eleven_labs_model.py
 test/test_eleven_labs_synthesizer.py
 test/test_ended_reasons.py
+test/test_event.py
 test/test_event_name.py
 test/test_event_variable_name.py
 test/test_http_validation_error.py
@@ -42,7 +44,6 @@ test/test_open_ai.py
 test/test_open_ai_function.py
 test/test_open_ai_function_parameter.py
 test/test_open_ai_function_type.py
-test/test_operator.py
 test/test_phone_number.py
 test/test_phone_number_pagination.py
 test/test_phone_number_response.py
@@ -52,6 +53,7 @@ test/test_rime_synthesizer.py
 test/test_synthesizer_cost.py
 test/test_telephony_cost.py
 test/test_transcriber.py
+test/test_transcriber1.py
 test/test_transcriber_cost.py
 test/test_twilio_telephony.py
 test/test_update_agent.py
@@ -59,10 +61,12 @@ test/test_update_phone_number.py
 test/test_validation_error.py
 test/test_validation_error_loc_inner.py
 test/test_voice.py
+test/test_voice1.py
 test/test_wako_api_models_language_model_provider.py
 test/test_wako_api_models_phone_number_provider.py
 test/test_wako_api_models_synthesizer_provider.py
 test/test_wako_api_models_transcriber_provider.py
+test/test_webhook.py
 voiceos/__init__.py
 voiceos/api_client.py
 voiceos/api_response.py
@@ -101,6 +105,7 @@ voiceos/models/call_type.py
 voiceos/models/calls_pagination.py
 voiceos/models/chat_gpt.py
 voiceos/models/create_call.py
+voiceos/models/create_call_response.py
 voiceos/models/currency.py
 voiceos/models/deepgram_languages.py
 voiceos/models/deepgram_model.py
@@ -108,6 +113,7 @@ voiceos/models/deepgram_transcriber.py
 voiceos/models/eleven_labs_model.py
 voiceos/models/eleven_labs_synthesizer.py
 voiceos/models/ended_reasons.py
+voiceos/models/event.py
 voiceos/models/event_name.py
 voiceos/models/event_variable_name.py
 voiceos/models/http_validation_error.py
@@ -119,7 +125,6 @@ voiceos/models/open_ai.py
 voiceos/models/open_ai_function.py
 voiceos/models/open_ai_function_parameter.py
 voiceos/models/open_ai_function_type.py
-voiceos/models/operator.py
 voiceos/models/phone_number.py
 voiceos/models/phone_number_pagination.py
 voiceos/models/phone_number_response.py
@@ -141,3 +146,4 @@ voiceos/models/wako_api_models_language_model_provider.py
 voiceos/models/wako_api_models_phone_number_provider.py
 voiceos/models/wako_api_models_synthesizer_provider.py
 voiceos/models/wako_api_models_transcriber_provider.py
+voiceos/models/webhook.py

@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **voice** | [**Voice**](Voice.md) |  | [optional] 
 **transcriber** | [**Transcriber**](Transcriber.md) |  | [optional] 
 **max_call_duration** | **int** | The maximum call duration in seconds. If null, the call can be of any duration. The default value is 10 min. | [optional] [default to 600]
+**webhooks** | [**List[Webhook]**](Webhook.md) | The webhooks of the agent | [optional] 
 
 ## Example
 

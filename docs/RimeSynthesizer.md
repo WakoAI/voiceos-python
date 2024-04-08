@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **provider** | **str** | The synthesizer provider. | [optional] [default to 'rime']
 **speaker** | **str** | The speaker of the voice. | [optional] [default to 'abbie']
 **reduce_lantency** | **bool** | Reduces the latency of response, at the cost of some possible mispronunciation of digits and abbreviations. | [optional] [default to False]
-**speed_alpha** | **float** | Adjusts the speed of speech. Lower is faster. Higher is slower. | [optional] [default to 1]
+**speed_alpha** | **float** | Adjusts the speed of speech. Lower is faster. Higher is slower. | [optional] [default to 1.0]
 
 ## Example
 

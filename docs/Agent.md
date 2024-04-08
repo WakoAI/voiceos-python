@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **voice** | [**Voice**](Voice.md) |  | [optional] 
 **transcriber** | [**Transcriber**](Transcriber.md) |  | [optional] 
 **max_call_duration** | **object** | The maximum call duration in seconds. If null, the call can be of any duration. The default value is 10 min. | [optional] 
+**webhooks** | **object** | The webhooks of the agent | [optional] 
 **id** | **object** | The id of the agent | 
 **uri** | **object** | The uri of the agent | 
 **account_id** | **object** | The id of the owner of the agent | 

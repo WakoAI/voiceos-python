@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **create_call**
-> object create_call(create_call)
+> CreateCallResponse create_call(create_call)
 
 Create Call
 
@@ -22,6 +22,7 @@ Create Call
 ```python
 import voiceos
 from voiceos.models.create_call import CreateCall
+from voiceos.models.create_call_response import CreateCallResponse
 from voiceos.rest import ApiException
 from pprint import pprint
 
@@ -68,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**object**
+[**CreateCallResponse**](CreateCallResponse.md)
 
 ### Authorization
 
