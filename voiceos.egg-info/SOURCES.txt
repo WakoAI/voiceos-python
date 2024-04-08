@@ -52,7 +52,6 @@ test/test_rime_synthesizer.py
 test/test_synthesizer_cost.py
 test/test_telephony_cost.py
 test/test_transcriber.py
-test/test_transcriber1.py
 test/test_transcriber_cost.py
 test/test_twilio_telephony.py
 test/test_update_agent.py
@@ -60,7 +59,6 @@ test/test_update_phone_number.py
 test/test_validation_error.py
 test/test_validation_error_loc_inner.py
 test/test_voice.py
-test/test_voice1.py
 test/test_wako_api_models_language_model_provider.py
 test/test_wako_api_models_phone_number_provider.py
 test/test_wako_api_models_synthesizer_provider.py
