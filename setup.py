@@ -1,15 +1,13 @@
-# coding: utf-8
+from setuptools import setup, find_packages
 
-from setuptools import setup, find_packages  # noqa: H301
+# read the contents of your README file
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
-# To install the library, run the following
-#
-# python setup.py install
-#
-# prerequisite: setuptools
-# http://pypi.python.org/pypi/setuptools
+
 NAME = "voiceos"
-VERSION = "0.8.0"
+VERSION = "0.8.1"
 PYTHON_REQUIRES = ">=3.7"
 REQUIRES = [
     "urllib3 >= 1.25.3, < 2.1.0",
@@ -21,8 +19,8 @@ REQUIRES = [
 setup(
     name=NAME,
     version=VERSION,
-    description="VoiceOS Python ClienSDKt",
-    author="WakoAI Inc",
+    description="VoiceOS Python SDK",
+    author="WakoAI",
     author_email="hello@wako.ai",
     url="https://github.com/WakoAi/voiceos-python",
     keywords=["VoiceOS", "VoiceOS Python ClientSDK", "VoiceOS Python"],
@@ -30,6 +28,6 @@ setup(
     packages=find_packages(exclude=["test", "tests"]),
     include_package_data=True,
     long_description_content_type='text/markdown',
-    long_description="",
+    long_description=long_description,
     package_data={"voiceos": ["py.typed"]},
 )
