@@ -5,10 +5,10 @@ All URIs are relative to *http://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**create_agent**](AgentsApi.md#create_agent) | **POST** /agents | Create Agent
-[**delete_agent**](AgentsApi.md#delete_agent) | **DELETE** /agents/{agent_id} | Delete Agent
-[**get_agent**](AgentsApi.md#get_agent) | **GET** /agents/{agent_id} | Get Agent
+[**delete_agent**](AgentsApi.md#delete_agent) | **DELETE** /agents/{id} | Delete Agent
+[**get_agent**](AgentsApi.md#get_agent) | **GET** /agents/{id} | Get Agent
 [**list_agents**](AgentsApi.md#list_agents) | **GET** /agents | List Agents
-[**update_agent**](AgentsApi.md#update_agent) | **PATCH** /agents/{agent_id} | Update Agent
+[**update_agent**](AgentsApi.md#update_agent) | **PATCH** /agents/{id} | Update Agent
 
 
 # **create_agent**
@@ -18,7 +18,7 @@ Create Agent
 
 ### Example
 
-* Api Key Authentication (APIKeyHeader):
+* Bearer Authentication (Bearer):
 
 ```python
 import voiceos
@@ -38,11 +38,10 @@ configuration = voiceos.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure API key authorization: APIKeyHeader
-configuration.api_key['APIKeyHeader'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['APIKeyHeader'] = 'Bearer'
+# Configure Bearer authorization: Bearer
+configuration = voiceos.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
 
 # Enter a context with an instance of the API client
 with voiceos.ApiClient(configuration) as api_client:
@@ -74,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[APIKeyHeader](../README.md#APIKeyHeader)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -91,13 +90,13 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_agent**
-> AgentResponse delete_agent(agent_id)
+> AgentResponse delete_agent(id)
 
 Delete Agent
 
 ### Example
 
-* Api Key Authentication (APIKeyHeader):
+* Bearer Authentication (Bearer):
 
 ```python
 import voiceos
@@ -116,21 +115,20 @@ configuration = voiceos.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure API key authorization: APIKeyHeader
-configuration.api_key['APIKeyHeader'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['APIKeyHeader'] = 'Bearer'
+# Configure Bearer authorization: Bearer
+configuration = voiceos.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
 
 # Enter a context with an instance of the API client
 with voiceos.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = voiceos.AgentsApi(api_client)
-    agent_id = 'agent_id_example' # str | 
+    id = 'id_example' # str | The id of the agent.
 
     try:
         # Delete Agent
-        api_response = api_instance.delete_agent(agent_id)
+        api_response = api_instance.delete_agent(id)
         print("The response of AgentsApi->delete_agent:\n")
         pprint(api_response)
     except Exception as e:
@@ -144,7 +142,7 @@ with voiceos.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **agent_id** | **str**|  | 
+ **id** | **str**| The id of the agent. | 
 
 ### Return type
 
@@ -152,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[APIKeyHeader](../README.md#APIKeyHeader)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -169,13 +167,13 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_agent**
-> AgentResponse get_agent(agent_id)
+> AgentResponse get_agent(id)
 
 Get Agent
 
 ### Example
 
-* Api Key Authentication (APIKeyHeader):
+* Bearer Authentication (Bearer):
 
 ```python
 import voiceos
@@ -194,21 +192,20 @@ configuration = voiceos.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure API key authorization: APIKeyHeader
-configuration.api_key['APIKeyHeader'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['APIKeyHeader'] = 'Bearer'
+# Configure Bearer authorization: Bearer
+configuration = voiceos.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
 
 # Enter a context with an instance of the API client
 with voiceos.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = voiceos.AgentsApi(api_client)
-    agent_id = 'agent_id_example' # str | 
+    id = 'id_example' # str | The id of the agent.
 
     try:
         # Get Agent
-        api_response = api_instance.get_agent(agent_id)
+        api_response = api_instance.get_agent(id)
         print("The response of AgentsApi->get_agent:\n")
         pprint(api_response)
     except Exception as e:
@@ -222,7 +219,7 @@ with voiceos.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **agent_id** | **str**|  | 
+ **id** | **str**| The id of the agent. | 
 
 ### Return type
 
@@ -230,7 +227,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[APIKeyHeader](../README.md#APIKeyHeader)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -247,13 +244,13 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_agents**
-> AgentPagination list_agents(created_after=created_after, created_before=created_before, index=index, size=size)
+> AgentPagination list_agents(created_after=created_after, created_before=created_before, index=index, limit=limit)
 
 List Agents
 
 ### Example
 
-* Api Key Authentication (APIKeyHeader):
+* Bearer Authentication (Bearer):
 
 ```python
 import voiceos
@@ -272,24 +269,23 @@ configuration = voiceos.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure API key authorization: APIKeyHeader
-configuration.api_key['APIKeyHeader'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['APIKeyHeader'] = 'Bearer'
+# Configure Bearer authorization: Bearer
+configuration = voiceos.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
 
 # Enter a context with an instance of the API client
 with voiceos.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = voiceos.AgentsApi(api_client)
-    created_after = '2013-10-20T19:20:30+01:00' # datetime |  (optional)
-    created_before = '2013-10-20T19:20:30+01:00' # datetime |  (optional)
-    index = 1 # int |  (optional) (default to 1)
-    size = 100 # int |  (optional) (default to 100)
+    created_after = '2013-10-20T19:20:30+01:00' # datetime | The date after which the agent was created. (optional)
+    created_before = '2013-10-20T19:20:30+01:00' # datetime | The date before which the agent was created. (optional)
+    index = 1 # int | The index of the page to return. (optional) (default to 1)
+    limit = 100 # int | The limit of items to return in the page. (optional) (default to 100)
 
     try:
         # List Agents
-        api_response = api_instance.list_agents(created_after=created_after, created_before=created_before, index=index, size=size)
+        api_response = api_instance.list_agents(created_after=created_after, created_before=created_before, index=index, limit=limit)
         print("The response of AgentsApi->list_agents:\n")
         pprint(api_response)
     except Exception as e:
@@ -303,10 +299,10 @@ with voiceos.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **created_after** | **datetime**|  | [optional] 
- **created_before** | **datetime**|  | [optional] 
- **index** | **int**|  | [optional] [default to 1]
- **size** | **int**|  | [optional] [default to 100]
+ **created_after** | **datetime**| The date after which the agent was created. | [optional] 
+ **created_before** | **datetime**| The date before which the agent was created. | [optional] 
+ **index** | **int**| The index of the page to return. | [optional] [default to 1]
+ **limit** | **int**| The limit of items to return in the page. | [optional] [default to 100]
 
 ### Return type
 
@@ -314,7 +310,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[APIKeyHeader](../README.md#APIKeyHeader)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -331,13 +327,13 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_agent**
-> AgentResponse update_agent(agent_id, update_agent)
+> AgentResponse update_agent(id, update_agent)
 
 Update Agent
 
 ### Example
 
-* Api Key Authentication (APIKeyHeader):
+* Bearer Authentication (Bearer):
 
 ```python
 import voiceos
@@ -357,22 +353,21 @@ configuration = voiceos.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure API key authorization: APIKeyHeader
-configuration.api_key['APIKeyHeader'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['APIKeyHeader'] = 'Bearer'
+# Configure Bearer authorization: Bearer
+configuration = voiceos.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
 
 # Enter a context with an instance of the API client
 with voiceos.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = voiceos.AgentsApi(api_client)
-    agent_id = 'agent_id_example' # str | 
+    id = 'id_example' # str | The id of the agent.
     update_agent = voiceos.UpdateAgent() # UpdateAgent | 
 
     try:
         # Update Agent
-        api_response = api_instance.update_agent(agent_id, update_agent)
+        api_response = api_instance.update_agent(id, update_agent)
         print("The response of AgentsApi->update_agent:\n")
         pprint(api_response)
     except Exception as e:
@@ -386,7 +381,7 @@ with voiceos.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **agent_id** | **str**|  | 
+ **id** | **str**| The id of the agent. | 
  **update_agent** | [**UpdateAgent**](UpdateAgent.md)|  | 
 
 ### Return type
@@ -395,7 +390,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[APIKeyHeader](../README.md#APIKeyHeader)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 

@@ -5,10 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**provider** | [**AgentProvider**](AgentProvider.md) | The provider of the agent. | [optional] 
-**cost** | **float** | The cost for the agent compute usage, discount included. | 
-**seconds** | **float** | The number of minutes used for the agent. | 
-**discount** | **int** | The discount percentage of agent cost. | 
+**provider** | [**AgentProvider**](AgentProvider.md) | The provider of the agent (i.e VoiceOS). | 
+**cost** | **float** | The cost for the agent usage (USD). | 
+**seconds** | **float** | The number of seconds used for the agent orchestration. | 
 
 ## Example
 

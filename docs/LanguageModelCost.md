@@ -6,10 +6,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **provider** | [**WakoApiModelsLanguageModelProvider**](WakoApiModelsLanguageModelProvider.md) | The provider of the language model. | 
-**cost** | **float** | The cost for the language model usage. Returns zero, if the provider account you provided was used. | 
+**cost** | **float** | The cost for the language model usage (USD). | 
 **input_tokens** | **int** | The number of input tokens used for the language model. | 
 **output_tokens** | **int** | The number of output tokens used for the language model. | 
-**external** | **bool** | Whether the provider account you provided was used. If true, the cost will be zero. | 
 
 ## Example
 

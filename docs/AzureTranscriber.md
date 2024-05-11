@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **provider** | **str** | The transcriber provider. | [optional] [default to 'azure']
-**languages** | [**List[AzureLanguages]**](AzureLanguages.md) | The selected languages for the transcription. | [optional] [default to [en-US]]
+**languages** | [**List[AzureTranscriberLanguagesInner]**](AzureTranscriberLanguagesInner.md) | The selected languages for the transcription. | [optional] [default to [en-US]]
 
 ## Example
 

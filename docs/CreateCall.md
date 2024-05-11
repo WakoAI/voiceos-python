@@ -5,9 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**to_number** | **str** |  | 
-**from_number** | **str** |  | 
-**agent** | [**Agent**](Agent.md) |  | 
+**from_number** | **str** | The phone number associated with the account from which the call will be made. | 
+**to_number** | **str** | The phone number to call including the country code. | 
+**agent_id** | **str** | The agent id to use for the conversation. If null, the agent configuration will be used. | [optional] 
+**agent_config** | [**AgentConfiguration**](AgentConfiguration.md) | The agent configuration to use for the conversation. If null, the agent id will be used. | [optional] 
 
 ## Example
 

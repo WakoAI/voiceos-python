@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**provider** | **str** | The telephony provider. | [optional] [default to 'twilio']
+**provider** | [**WakoApiModelsPhoneNumberProvider**](WakoApiModelsPhoneNumberProvider.md) | The telephony provider. | 
 **phone_number_sid** | **str** | The twilio phone number SID. | 
-**account_sid** | **str** | The account sid of the telephony provider (i.e Twilio Account SID). Returns null if the phone number was purchased with Wako. | [optional] 
-**auth_token** | **str** | The auth token of the telephony provider (i.e Twilio Auth Token). Returns null if the phone number was purchased with Wako. | [optional] 
+**account_sid** | **str** | The account sid of the telephony provider (i.e Twilio Account SID). Returns null if the phone number was purchased with VoiceOS. | [optional] 
+**auth_token** | **str** | The auth token of the telephony provider (i.e Twilio Auth Token). Returns null if the phone number was purchased with VoiceOS. | [optional] 
 
 ## Example
 

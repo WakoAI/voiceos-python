@@ -5,15 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** | The name of the agent | [optional] 
-**initial_message** | **str** | The initial message of the agent | [optional] 
-**prompt** | **str** | The prompt preamble of the agent | [optional] 
-**language** | [**AgentLanguage**](AgentLanguage.md) | The language of the agent | [optional] 
-**language_model** | [**OpenAI**](OpenAI.md) | The language model of the agent. | [optional] 
+**initial_message** | **str** | The initial message that the agent will say. If null, the agent will wait for the user to speak first. | [optional] 
+**prompt** | **str** | The prompt of the agent. | [optional] 
 **voice** | [**Voice1**](Voice1.md) |  | [optional] 
+**language_model** | [**OpenAI**](OpenAI.md) | The language model of the agent. | [optional] 
 **transcriber** | [**Transcriber1**](Transcriber1.md) |  | [optional] 
-**max_duration_time** | **int** | The maximum call duration in seconds. If null, the call can be of any duration. The default value is 10 min. | [optional] [default to 600]
-**webhooks** | [**List[Webhook]**](Webhook.md) | The webhooks of the agent | [optional] 
+**max_duration_seconds** | **int** | The maximum conversation duration in seconds. If null, the conversation can be of any duration. The default value is 10 min. | [optional] [default to 600]
+**webhooks** | [**List[Webhook]**](Webhook.md) | The webhooks of the agent. These are used for real-time conversation events such as function_calls, messages and much more. | [optional] 
+**metadata** | **Dict[str, str]** | The metadata of the agent. This is used to store additional information about the agent. | [optional] 
 
 ## Example
 

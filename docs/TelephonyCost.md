@@ -7,8 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **provider** | [**WakoApiModelsPhoneNumberProvider**](WakoApiModelsPhoneNumberProvider.md) | The provider of the phone number used. | 
 **cost** | **float** | The cost for the telephony usage. Returns zero, if the phone number was imported. | 
-**seconds** | **float** | The number of minutes used for the telephony. | 
-**external** | **bool** | Whether the phone number was imported. If true, the cost will be zero. | 
+**seconds** | **float** | The number of seconds used for the telephony. | 
 
 ## Example
 

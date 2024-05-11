@@ -5,7 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inbound_agent_uri** | **str** | The agent uri that will be used for inbound calls. If null, the phone number is will not receive any calls. | [optional] 
+**inbound_agent_id** | **str** | The agent id that will be used for inbound calls. If null, the phone number is will not receive any calls. | [optional] 
+**webhooks** | [**List[PhoneNumberWebhook]**](PhoneNumberWebhook.md) | The webhooks of the phone number. This is used to fetch the agent at the start of the conversation. | [optional] 
 
 ## Example
 

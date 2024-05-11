@@ -24,18 +24,18 @@ Create a new instance of the VoiceOS class by passing your API key:
 voiceos = VoiceOS("your-api-key")
 ```
 
-Start using the python client to access the [agent](https://docs.voiceos.io/api-reference/agents/get), [calls](https://docs.voiceos.io/api-reference/calls/get) and [phone numbers](https://docs.voiceos.io/api-reference/phone-numbers/get) resources.
+Start using the python client to access the [agent](https://docs.voiceos.io/api-reference/agents/get), [calls](https://docs.voiceos.io/api-reference/conversations/get) and [phone numbers](https://docs.voiceos.io/api-reference/phone-numbers/get) resources.
 
 ```python
-# Get all agents
+# List all agents
 agents = voiceos.agents.list_agents()
 print(agents)
 
-# Get all calls
-calls = voiceos.calls.list_calls()
+# List all conversations
+calls = voiceos.conversations.list_conversations()
 print(calls)
 
-# Get all phone numbers
+# List all phone numbers
 phone_numbers = voiceos.phone_numbers.list_phone_numbers()
 print(phone_numbers)
 ```

@@ -5,14 +5,23 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**provider** | **object** | The synthesizer provider. | [optional] 
-**model** | [**AzureModel**](AzureModel.md) | The azure model to use | [optional] 
-**optimize_latency** | **object** | Optimize for latency | [optional] 
-**pitch** | **object** | The pitch of the voice | [optional] 
-**rate** | **object** | The rate of the voice | [optional] 
-**speaker** | **object** | The speaker of the voice. | [optional] 
-**reduce_lantency** | **object** | Reduces the latency of response, at the cost of some possible mispronunciation of digits and abbreviations. | [optional] 
-**speed_alpha** | **object** | Adjusts the speed of speech. Lower is faster. Higher is slower. | [optional] 
+**provider** | **object** | The voice provider. | [optional] 
+**model** | [**Model2**](Model2.md) |  | [optional] 
+**speed** | **object** | Control how fast the generated audio should be. A number greater than 0 and less than or equal to 5.0 | [optional] 
+**temperature** | **object** | A floating point number between 0, inclusive, and 2, inclusive. If equal to null or not provided, the model&#39;s default temperature will be used. | [optional] 
+**text_guidance** | **object** | A number between 1 and 2. This number influences how closely the generated speech adheres to the input text. | [optional] 
+**style_guidance** | **object** | A number between 1 and 30. Use lower numbers to to reduce how strong your chosen emotion will be. Higher numbers will create a very emotional performance. | [optional] 
+**voice_id** | [**VoiceId**](VoiceId.md) |  | [optional] 
+**model_id** | [**ElevenLabsModel**](ElevenLabsModel.md) | The model to use. Defaults to eleven_turbo_v2. | [optional] 
+**optimize_latency** | **object** | Optimize for latency. | [optional] 
+**use_speaker_boost** | **object** | Use speaker boost. | [optional] 
+**similarity_boost** | **object** | Boost the similarity of the generated audio to the input text. | [optional] 
+**stability** | **object** | Control the stability of the generated audio. | [optional] 
+**pitch** | **object** | The pitch of the voice. | [optional] 
+**rate** | **object** | The rate of the voice. | [optional] 
+**speaker** | [**Speaker**](Speaker.md) |  | [optional] 
+**speed_alpha** | **object** | Adjusts the speed of speech. Lower than 1.0 is faster than default. Higher than 1.0 is slower than default. | [optional] 
+**reduce_latency** | **object** | Reduces the latency of response, at the cost of some possible mispronunciation of digits and abbreviations. | [optional] 
 
 ## Example
 

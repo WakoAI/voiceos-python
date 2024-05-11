@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**provider** | **str** | The telephony provider. | [optional] [default to 'twilio']
-**phone_number** | **str** | The phone number. | 
+**provider** | [**WakoApiModelsPhoneNumberProvider**](WakoApiModelsPhoneNumberProvider.md) | The telephony provider. | 
+**phone_number** | **str** | The available phone number to buy. | 
 **postal_code** | **str** | The postal code of the phone number. | [optional] 
 **iso_country** | **str** | The iso country code of the phone number. | [optional] 
 

@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**event** | [**Event**](Event.md) |  | 
-**url** | **str** | The url to call when the event is triggered | 
-**method** | [**MethodEnum**](MethodEnum.md) | The method to use when calling the url | 
-**headers** | **Dict[str, str]** | The headers to use when calling the url | [optional] 
-**filter** | **Dict[str, int]** | The filter to use when triggering the webhook | [optional] 
+**events** | [**List[EventName]**](EventName.md) | The events that will trigger the webhook to send a request. | 
+**url** | **str** | The url of the webhook. Where the requests will be sent. | 
+**method** | [**MethodEnum**](MethodEnum.md) | The method of the webhook. | 
+**headers** | **Dict[str, str]** | The headers of the webhook. Use the headers to authenticate requests to your backend. | [optional] 
+**filter** | **str** | The filter for the webhook events. Use to filter events with conditional statements. | [optional] 
 
 ## Example
 

@@ -6,9 +6,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **provider** | [**WakoApiModelsTranscriberProvider**](WakoApiModelsTranscriberProvider.md) | The provider of the transcriber. | 
-**cost** | **float** | The cost for the synthetizer usage. Returns zero, if the provider account you provided was used. | 
-**seconds** | **float** | The number of minutes used for the transcriber. | 
-**external** | **bool** | Whether the provider account you provided was used. If true, the cost will be zero. | 
+**cost** | **float** | The cost for the transcriber usage (USD). | 
+**seconds** | **float** | The number of seconds used for the transcriber. | 
 
 ## Example
 

@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **items** | [**List[PhoneNumberResponse]**](PhoneNumberResponse.md) | The list of phone numbers returned. | 
 **index** | **int** | The current index of the page. | 
-**has_next** | **bool** | Whether there is a next page. | 
+**has_more** | **bool** | Whether there is a next page. | 
 
 ## Example
 

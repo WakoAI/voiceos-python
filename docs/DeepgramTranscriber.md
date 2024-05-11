@@ -6,9 +6,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **provider** | **str** | The transcriber provider. | [optional] [default to 'deepgram']
-**model** | [**DeepgramModel**](DeepgramModel.md) | The deepgram model to use. | [optional] 
-**language** | [**DeepgramLanguages**](DeepgramLanguages.md) | The selected language for the transcription. | [optional] 
-**keywords** | **List[str]** | Specific keywords you want to detect in the transcription. This is usefull to correctly understand product or company names. | [optional] [default to []]
+**model** | [**Model1**](Model1.md) |  | [optional] 
+**language** | [**Language**](Language.md) |  | [optional] 
+**keywords** | **List[str]** | Specific keywords you want to detect in the transcription. This is useful to correctly understand product or company names. | [optional] [default to []]
 
 ## Example
 

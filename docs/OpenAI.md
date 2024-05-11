@@ -5,9 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**provider** | **str** | The lnaguage model provider. | [optional] [default to 'openai']
-**model** | [**ChatGPT**](ChatGPT.md) | The OpenAI Chat GPT model to use | [optional] 
-**functions** | [**List[OpenAIFunction]**](OpenAIFunction.md) | The list of OpenAI function calls. | [optional] 
+**provider** | **str** | The language model provider. | [optional] [default to 'openai']
+**model** | [**Model3**](Model3.md) |  | [optional] 
 
 ## Example
 

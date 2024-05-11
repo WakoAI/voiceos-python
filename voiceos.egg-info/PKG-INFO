@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: voiceos
-Version: 0.8.1.2
+Version: 0.8.1.3
 Summary: VoiceOS Python SDK
 Home-page: https://github.com/WakoAi/voiceos-python
 Author: WakoAI
@@ -34,7 +34,7 @@ Create a new instance of the VoiceOS class by passing your API key:
 voiceos = VoiceOS("your-api-key")
 ```
 
-Start using the python client to access the [agent](https://docs.voiceos.io/api-reference/agents/get), [calls](https://docs.voiceos.io/api-reference/calls/get) and [phone numbers](https://docs.voiceos.io/api-reference/phone-numbers/get) resources.
+Start using the python client to access the [agent](https://docs.voiceos.io/api-reference/agents/get), [calls](https://docs.voiceos.io/api-reference/conversations/get) and [phone numbers](https://docs.voiceos.io/api-reference/phone-numbers/get) resources.
 
 ```python
 # Get all agents
@@ -42,7 +42,7 @@ agents = voiceos.agents.list_agents()
 print(agents)
 
 # Get all calls
-calls = voiceos.calls.list_calls()
+calls = voiceos.conversations.list_conversations()
 print(calls)
 
 # Get all phone numbers

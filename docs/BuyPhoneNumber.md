@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**provider** | **str** | The telephony provider. | [optional] [default to 'twilio']
-**phone_number** | **str** | The phone number to buy. | 
+**provider** | [**WakoApiModelsPhoneNumberProvider**](WakoApiModelsPhoneNumberProvider.md) | The telephony provider. | [optional] 
+**phone_number** | **str** | The phone number to buy. If null, a random phone number will be purchased. | [optional] 
 
 ## Example
 
